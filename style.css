@@ -6,7 +6,7 @@
     }
 
 html, body {
-    overflow-x: hidden;
+    overflow-x: hidden!important;
 }
 
 nav {
@@ -166,18 +166,24 @@ footer {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {...}
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden!important;
+    }
+}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
+    body {
+        overflow-x: hidden!important;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
     
     body {
-        overflow-x: hidden;
+        overflow-x: hidden!important;
     }
 
     ul {
