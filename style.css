@@ -45,6 +45,7 @@ ul{
     
 }
 
+
 li {
     list-style-type: none;
 
@@ -58,7 +59,7 @@ a:link{
 
 a:hover{
     color: green;
-    font-size: 20px;
+
 }
 
 
@@ -133,7 +134,7 @@ section {
 .servicepara {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 70%;
 }
 
 hr {
@@ -179,9 +180,11 @@ footer {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    body {
-        overflow-x: hidden!important;
+        @media only screen and (max-width: 600px) {
+            body {
+                overflow-x: hidden!important;
+            }
+        }
         @media only screen and (min-width: 600px) {
             body {
                 overflow-x: hidden!important;
