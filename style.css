@@ -142,7 +142,6 @@ hr {
     margin-bottom: 0px;
     padding-top: 0px; 
     width: 80%;
-    height:;
     margin-left: auto;
     margin-right: auto;
     background: rgba(184, 184, 184, 0.281); 
@@ -200,6 +199,10 @@ footer {
         overflow-x: hidden!important;
     }
 
+    @keyframes liAni{
+        from{opacity: 0%;}
+        to{opacity: 100%;}
+    }
 
     ul {
         position: absolute;
@@ -217,7 +220,8 @@ footer {
     }
     
     li {
-        opacity: 0;
+        
+    
     }
 
     .burger {
