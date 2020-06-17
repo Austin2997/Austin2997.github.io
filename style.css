@@ -48,12 +48,13 @@ ul{
 
 li {
     list-style-type: none;
+    color: black;
 
 }
 
 a:link{
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 20px;
 }
 
@@ -79,6 +80,7 @@ header {
     url('https://golfscape.com/blog/wp-content/uploads/2019/03/carnoustie-golf-links-championship-course-scotland.jpg');
     background-size: 100% 100%;
     color: white;
+    text-shadow:3px 3px 10px black ;
     height: 92vh;
     
 }
@@ -110,7 +112,7 @@ header {
 }
 
 .details:hover {
-    background: white;
+    background: rgb(236, 236, 236);
     color: black;
     border: solid 1px black;
 }
@@ -190,200 +192,6 @@ footer {
                 overflow-x: hidden!important;
             }
         }
-        
-        /* Medium devices (landscape tablets, 768px and up) */
-        @media only screen and (max-width: 768px) {
-            
-            .site {
-                overflow-x: hidden!important;
-            }
-        
-        
-            ul {
-                position: absolute;
-                right: 0px;
-                height: 92vh;
-                top: 8vh;
-                background-color:rgba(184, 184, 184, 0.705); 
-                z-index: 1;  
-                display: hidden;
-                flex-direction: column;
-                align-items: center;
-                width: 40%;
-                transform: translateX(100%);
-                transition: transform 0.5s ease-in;
-            }
-            
-            li {
-                opacity: 0%;
-            }
-        
-            .burger {
-                display: block;
-                cursor: pointer;
-            }
-        
-            section {
-                display: flex;
-                flex-direction: column;
-            }
-        
-            .midhr{
-                margin-top: 25px;
-            }
-        
-            #golficon{
-                margin-top: 25px;
-                padding-bottom:
-            }
-        
-            #membericon {
-                padding-top: 50px;
-            }
-        
-            #eventicon {
-                padding-top: 50px;
-            }
-        
-            hr {
-                margin-bottom: 0px;
-                
-            }
-        
-        
-            #memberp{
-                padding-bottom: 50px;
-            }
-        
-            #golfp{
-                padding-bottom: 25px;
-            }
-        
-            #tophr {
-                margin-top: 0px;
-            }
-        
-        
-            section p {
-                width: 50%;
-            }
-        
-            .nav-active {
-                transform: translateX(0%);
-            }
-        
-            @keyframes ulFade{
-                from{
-                    opacity: 0;
-                    transform: translateX(50px);
-                }
-                to{
-                    opacity: 1;
-                    transform: translateX(0px);
-                }
-            }
-        }
-    }
-
-    @media only screen and (min-width: 600px) {
-        body {
-            overflow-x: hidden!important;
-        }
-    }
-    
-    /* Medium devices (landscape tablets, 768px and up) */
-    @media only screen and (max-width: 768px) {
-        
-        .site {
-            overflow-x: hidden!important;
-        }
-    
-    
-        ul {
-            position: absolute;
-            right: 0px;
-            height: 92vh;
-            top: 8vh;
-            background-color:rgba(184, 184, 184, 0.705); 
-            z-index: 1;  
-            display: hidden;
-            flex-direction: column;
-            align-items: center;
-            width: 40%;
-            transform: translateX(100%);
-            transition: transform 0.5s ease-in;
-        }
-        
-        li {
-            opacity: 0%;
-        }
-    
-        .burger {
-            display: block;
-            cursor: pointer;
-        }
-    
-        section {
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .midhr{
-            margin-top: 25px;
-        }
-    
-        #golficon{
-            margin-top: 25px;
-            padding-bottom:
-        }
-    
-        #membericon {
-            padding-top: 50px;
-        }
-    
-        #eventicon {
-            padding-top: 50px;
-        }
-    
-        hr {
-            margin-bottom: 0px;
-            
-        }
-    
-    
-        #memberp{
-            padding-bottom: 50px;
-        }
-    
-        #golfp{
-            padding-bottom: 25px;
-        }
-    
-        #tophr {
-            margin-top: 0px;
-        }
-    
-    
-        section p {
-            width: 50%;
-        }
-    
-        .nav-active {
-            transform: translateX(0%);
-        }
-    
-        @keyframes ulFade{
-            from{
-                opacity: 0;
-                transform: translateX(50px);
-            }
-            to{
-                opacity: 1;
-                transform: translateX(0px);
-            }
-        }
-    }
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -399,13 +207,33 @@ footer {
         overflow-x: hidden!important;
     }
 
+    nav{
+        height:6vh;
+    }
+
+    .golflogo{
+        height: 5vh;
+        width: 5vh;
+    }
+
+    .logotext {
+        font-size: 11px;
+    }
+
+    .navbar{
+        height:60vh;
+        top:6vh;
+        border-bottom: solid 1px #3C3C3C;
+        border-left: solid 1px #3C3C3C;
+    }
+
 
     ul {
         position: absolute;
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color:rgba(184, 184, 184, 0.705); 
+        background-color:rgba(184, 184, 184, .85); 
         z-index: 1;  
         display: hidden;
         flex-direction: column;
@@ -417,6 +245,15 @@ footer {
     
     li {
         opacity: 0%;
+        color: black   
+    }
+
+    a:link {
+        color: black;
+    }
+
+    a:hover {
+        color: green;
     }
 
     .burger {
@@ -471,6 +308,7 @@ footer {
 
     .nav-active {
         transform: translateX(0%);
+        opacity: 100%;
     }
 
     @keyframes ulFade{
