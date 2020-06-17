@@ -199,10 +199,6 @@ footer {
         overflow-x: hidden!important;
     }
 
-    @keyframes liAni{
-        from{opacity: 0%;}
-        to{opacity: 100%;}
-    }
 
     ul {
         position: absolute;
@@ -214,14 +210,13 @@ footer {
         display: hidden;
         flex-direction: column;
         align-items: center;
-        width: 30%;
+        width: 40%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
     }
     
     li {
-        
-    
+        opacity: 0%;
     }
 
     .burger {
