@@ -47,7 +47,20 @@ ul{
 
 li {
     list-style-type: none;
+
 }
+
+a:link{
+    text-decoration: none;
+    color: black;
+    padding: 20px;
+}
+
+a:hover{
+    color: green;
+    font-size: 20px;
+}
+
 
 #home {
     padding-left: 0px;
@@ -186,6 +199,7 @@ footer {
     .site {
         overflow-x: hidden!important;
     }
+
 
     ul {
         position: absolute;
