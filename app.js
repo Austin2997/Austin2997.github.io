@@ -21,3 +21,5 @@ function Navhidden() {
       x.style.display = "none";
     }
   }
+
+  Navhidden();
