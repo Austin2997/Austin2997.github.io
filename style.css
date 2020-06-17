@@ -7,6 +7,7 @@
 
 .site {
     overflow-x: hidden!important;
+    position: relative;
 }
 
 nav {
@@ -193,7 +194,7 @@ footer {
         top: 8vh;
         background-color:rgba(184, 184, 184, 0.705); 
         z-index: 1;  
-        display: flex;
+        display: hidden;
         flex-direction: column;
         align-items: center;
         width: 30%;
