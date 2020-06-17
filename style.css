@@ -216,8 +216,13 @@ footer {
         flex-direction: column;
     }
 
+    .midhr{
+        margin-top: 25px;
+    }
+
     #golficon{
         margin-top: 25px;
+        padding-bottom:
     }
 
     #membericon {
